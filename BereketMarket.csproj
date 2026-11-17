@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>BereketMarket</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Remove="adminpasswordwindow.baml" />
+    <Resource Remove="backupwindow.baml" />
+    <Resource Remove="homewindow.baml" />
+    <Resource Remove="mainwindow.baml" />
+    <Resource Remove="managementwindow.baml" />
+    <Resource Remove="priceeditwindow.baml" />
+    <Resource Remove="producteditwindow.baml" />
+    <Resource Remove="producthistorywindow.baml" />
+    <Resource Remove="productlistwindow.baml" />
+    <Resource Remove="salecancellationwindow.baml" />
+    <Resource Remove="saleshistorywindow.baml" />
+    <Resource Remove="saleswindow.baml" />
+    <Resource Remove="stockadjustmentwindow.baml" />
+    <Resource Remove="stockentrywindow.baml" />
+    <Resource Include="adminpasswordwindow.baml" LogicalName="adminpasswordwindow.baml" />
+    <Resource Include="backupwindow.baml" LogicalName="backupwindow.baml" />
+    <Resource Include="homewindow.baml" LogicalName="homewindow.baml" />
+    <Resource Include="mainwindow.baml" LogicalName="mainwindow.baml" />
+    <Resource Include="managementwindow.baml" LogicalName="managementwindow.baml" />
+    <Resource Include="priceeditwindow.baml" LogicalName="priceeditwindow.baml" />
+    <Resource Include="producteditwindow.baml" LogicalName="producteditwindow.baml" />
+    <Resource Include="producthistorywindow.baml" LogicalName="producthistorywindow.baml" />
+    <Resource Include="productlistwindow.baml" LogicalName="productlistwindow.baml" />
+    <Resource Include="salecancellationwindow.baml" LogicalName="salecancellationwindow.baml" />
+    <Resource Include="saleshistorywindow.baml" LogicalName="saleshistorywindow.baml" />
+    <Resource Include="saleswindow.baml" LogicalName="saleswindow.baml" />
+    <Resource Include="stockadjustmentwindow.baml" LogicalName="stockadjustmentwindow.baml" />
+    <Resource Include="stockentrywindow.baml" LogicalName="stockentrywindow.baml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.34" />
+    <PackageReference Include="ClosedXML" Version="0.105.1" />
+  </ItemGroup>
+</Project>
+
+
